@@ -30,6 +30,39 @@
     <div class="data-body">
         <div class="var-select">
             <h2>Select Variables</h2>
+            <div class='body-container'></div>
+            <p>Worksheet S-10 - <a href="">Form</a> | <a href="">Instructions</a></p>
+            <div class="form"></div>
+                <label for="varName">Variable Name</label>
+                <input type="text" id="varName">
+                <label for="lineNum">Line Number</label>
+                <select name="lineNum" id="lineNum">
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <label for="clmNum">Column Number</label>
+                <select name="clmNum" id="clmNum">
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="varAdd">Add Variable</button>
+                <p id="varList"></p>
+                <button id="varAddToCart">Add to cart</button>
+            </div>
+        </div>
         </div>
     </div>
     <footer>
@@ -46,5 +79,6 @@
             <p>©2024 Open Hospital Data</p>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
