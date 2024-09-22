@@ -1,0 +1,40 @@
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1d3557;
+    border: 1px solid #1d3557;
+}
+
+nav svg {
+    padding-right: 5px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: end;
+    min-width: 60%;
+    margin-right: 25px;
+}
+
+.nav-items ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style-type: none;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+}
+
+.nav-items a:hover {
+    background-color: #A8DADC;
+    color: black;
+}

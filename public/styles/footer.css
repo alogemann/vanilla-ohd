@@ -1,0 +1,29 @@
+footer {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    background-color: #A8DADC;
+}
+
+footer p {
+    font-size: x-small;
+}

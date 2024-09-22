@@ -1,0 +1,33 @@
+.data-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.var-form {
+    min-width: 65%;
+    margin: 25px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.wksht-select-form {
+    margin: 25px;
+}
+
+.var-add-form {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.var-add-form * {
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}
