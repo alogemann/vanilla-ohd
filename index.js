@@ -8,11 +8,11 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req,res) => {
-    res.render('landing.ejs')
+    res.render('landing')
 })
 
 app.get('/custom', (req,res) => {
-    res.render('custom.ejs')
+    res.render('custom')
 })
 
 app.listen(3000, () => {

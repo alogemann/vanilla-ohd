@@ -1,3 +1,62 @@
+/* 
+Custom Cost Report Data App 1.0
+Javascript app for client to build custom cost report data 
+and return data as csv file to client
+
+Version 1.0 -
+Client required to input valid worksheet and line/column 
+numbers for cost report fields.
+
+App checks for valid worksheet, but if column/line number
+inputs invalid, dataframe will have null valued for those
+fields. 
+
+Logic:
+  
+    1.  Client chooses desired facilities
+        a.  facility attributes - 
+            - chain
+            - state
+            - city
+            - county
+            - year range
+
+    2. Client chooses preset cost report fields
+        a.  facility information - 
+            - name
+            - city
+            - county
+            - state
+            - chain
+            - report start date
+            - report end date
+        b.  financial information
+            - tbd from IU + AHD
+        c. utilization information
+            - tbd from IU and AHD
+
+    3.  Client chooses worksheet form
+        a.  Worksheet selection adds new worksheet pane to page with
+            inputs for column and line number fields
+        b.  Client makes column and line selection and adds variable
+            to data cart. 
+        c.  repeat for all variables in worksheet
+    
+    4.  Repeat Step 1. for all desired worksheets and fields
+
+    5. Client selects 'create dataset'
+        a. navigate to new page to review and finalize dataset
+        b. if data is correct, build dataset
+        c. data is sent to client in csv format
+    
+    6.  Validations -
+        a.  App will check if worksheet has already been added to page
+        b.  App will check if variable has already been added to dataset
+
+    
+*/
+
+
 //set variables for data selection
 const varForm = document.querySelector('#var-form')
 const varCart = document.querySelector('#var-cart')
