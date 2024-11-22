@@ -5,8 +5,8 @@
 }
 
 .var-form {
-    min-width: 65%;
-    margin: 25px;
+    min-width: 60%;
+    margin: 10px 25px 10px 25px;
     padding: 10px;
     background-color: #e9ecef;
     border: 1px solid black;
@@ -18,7 +18,7 @@
 }
 
 .var-add-form {
-    margin-top: 10px;
+    margin: 10px 25px 10px 25px;
     padding: 5px;
     border: 1px dashed black;
     border-radius: 5px;
@@ -30,4 +30,8 @@
 
 .hidden {
     display: none;
+}
+
+#instructions {
+    margin-top: 25px;
 }

@@ -12,10 +12,19 @@
 <%- include('partials/navbar.ejs') %>
 <body>
     <div class="data-body">
+        <div class="var-form" id="instructions">
+            <h2>Create custom cost report dataset:</h2>
+        </div>
+        <div class="var-form" id="fac-select">
+            <h2>Select Facilities</h2>
+        </div>
+        <div class="var-form" id="attr-select">
+            <h2>Select Attributes</h2>
+        </div>
         <div class="var-form" id="var-form">
-            <h2>Build Custom Dataset</h1>
-            <h3>Choose Cost Report Worksheet</h2>
+            <h2>Choose Custom Variables</h2>
             <div class="wksht-select-form">
+                <h3>Select Cost Report Worksheet</h3>
                 <label for="wksht-select"><b>Worksheet</b></label>
                 <select name="wksht-select" id="wksht-select">
                     <option value="S100000">S-10</option>
@@ -24,9 +33,9 @@
                 </select>
                 <button id="btn-wksht-select">Submit</button>
             </div>
-        </div>
-        <div class="var-form hidden" id="var-cart">
-            <h3 id="var-cart-h3">Variable Cart</h3>
+            <div class="var-form hidden" id="var-cart">
+                <h3 id="var-cart-h3">Variable Cart</h3>
+            </div>
         </div>
     </div>
     <%- include('partials/footer.ejs') %>
