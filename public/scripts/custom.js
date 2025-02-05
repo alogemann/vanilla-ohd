@@ -13,7 +13,7 @@ fields.
 
 Logic:
   
-    1.  Client chooses desired facilities
+    1. Client chooses desired facilities
         a.  facility attributes - 
             - chain
             - state
@@ -35,14 +35,14 @@ Logic:
         c. utilization information
             - tbd from IU and AHD
 
-    3.  Client chooses worksheet form
+    3. Client chooses worksheet form
         a.  Worksheet selection adds new worksheet pane to page with
             inputs for column and line number fields
         b.  Client makes column and line selection and adds variable
             to data cart. 
         c.  repeat for all variables in worksheet
     
-    4.  Repeat Step 1. for all desired worksheets and fields
+    4. Repeat Step 1. for all desired worksheets and fields
 
     5. Client selects 'create dataset'
         a. navigate to new page to review and finalize dataset
@@ -58,11 +58,10 @@ Logic:
 
 
 //set variables for data selection
-const varForm = document.querySelector('#var-form')
+const varForm = document.querySelector('#var-select')
 const varCart = document.querySelector('#var-cart')
 const btnWkshtSelect = document.querySelector('#btn-wksht-select')
 const wksht = document.querySelector('#wksht-select')
-let Cart = {}
 let variables = {};
 let varCount = 0;
 
@@ -144,7 +143,7 @@ btnWkshtSelect.addEventListener('click', () => {
 
 
     //append wksht to varForm
-    varForm.appendChild(wkshtDiv)
+    varForm.insertBefore(wkshtDiv, varCart)
 
     //add variable to worksheet
     btnAdd.addEventListener("click", () => {
@@ -173,9 +172,9 @@ btnWkshtSelect.addEventListener('click', () => {
             varItm.innerText = `[variable name: ${nameInput.value}][column number: ${clmnSelect.value}][line number: ${lineSelect.value}]`
             varItm.appendChild(del)
 
-            varList.appendChild(varItm)
+            varCart.appendChild(varItm)
             if (varCount === 1) {
-                varList.className = 'var-list'
+                varCart.classList.toggle('hidden')
             }
 
             //add delete button to worksheet variable
@@ -185,7 +184,7 @@ btnWkshtSelect.addEventListener('click', () => {
                 varCount--;
 
                 if (varCount === 0) {
-                    varList.className = ''  
+                    varCart.classList.toggle('hidden')
                 }
             })
 
